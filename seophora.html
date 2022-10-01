@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>priyanka</title>
+    <style>
+        .heading{
+            text-align: center;
+        }
+        #container{
+            width: 100%;
+            margin: auto;
+            
+        }
+      #navbar{
+          display: flex;
+          justify-content: space-evenly;
+          text-align: center;
+          padding-top: 50px;
+          padding-bottom: 40px;  
+          cursor: pointer;
+          font-weight: bolder; 
+      }
+     
+      .img1{
+        
+          margin: auto;
+          padding: 50px;
+          padding-left: 60px;
+          /* border: solid 1px red; */
+         }
+     
+      .nses{
+         width: 80%;
+          display: flex;
+          justify-content: space-between;
+          padding-top: 20px;
+          padding-bottom: 60px;
+          margin: auto;     
+      }
+      .nses > div { 
+       cursor: pointer; 
+        }
+        .nses > div > button {
+            height: 70px;
+            width: 150px;
+            font-weight: bold;
+            background-color: black;
+            color: white;
+        }
+        .nses > div > button>a{
+            text-decoration: none;
+            color: white;
+        }
+      .logo1 > h2 {
+            width: 1250px;
+            height: 98.58px;
+           text-align: center;
+           font-style:italic;
+            
+      }
+      .sbc{
+          width: 90%;
+          margin: auto;
+      }
+      .sbc > div >img {
+       width: 100%;
+      }
+      .sbc2 > div > img{
+         /* display: flex; */
+         display:grid;
+         grid-template-columns: repeat(1,60px);
+         grid-template-rows: repeat(4,60px);
+         /* height: 5PX;
+         width: 20PX;
+         border: solid 1px red;
+         padding: 20px;
+         padding-left: 70px;
+         padding-bottom: 70px;
+         margin: auto; */
+          
+     }
+     .sbc > div > a  > img{
+         width: 290px;
+         height: 258px;
+        cursor: pointer; 
+     }
+     .logo2{
+         width: 90%;
+         margin: auto;
+     }
+     .logo2 > img{
+       width: 100%;
+     }
+     .tst{
+         width: 90%;
+        display: flex;
+         margin: auto; 
+     }
+     .tst > div:nth-child(4){
+         padding-top:30px ;
+     }
+     .tst > div  > img{
+        width: 100%;
+        cursor: pointer; 
+     }
+     .logo3{
+         width: 90%;
+         margin: auto;
+     }
+     .logo3 > img{
+       width: 100%;
+     }
+     
+     .sba{
+         width: 90%;
+         gap: 15px;
+        display: flex;
+        justify-content: space-between;
+         padding-bottom: 40px;
+         margin: auto;   
+     }
+     .sba > div  > img{
+       width: 100%;
+        cursor: pointer; 
+     }
+     .logo4 > img{
+        width: 1250px;
+            height: 98.58px;
+            padding-left: 100px;
+            justify-content: center;
+     }
+     .sbg{
+         
+         display: flex;
+        justify-content: center;
+         gap: 10px;
+         /* border: solid 1px red; */
+         padding: 20px;
+         padding-left: 70px;
+         padding-bottom: 70px;
+         margin: auto;
+         
+     }
+     .sbg > div > img{
+         width: 593px;
+         height: 400px;
+         cursor: pointer;
+     }
+     .logo5 > img{
+      width: 100%;      
+     }
+
+     .sbt{
+         width: 90%;
+        display: flex;
+        justify-content: space-between;
+       gap: 15px;
+         margin: auto;
+     }
+     .sbt > div > img{
+       width: 100%;
+         cursor: pointer;
+     }
+     .logo6 > img{
+       width: 100%;
+     }
+     .sbs{
+         width: 90%;
+         margin: auto;
+         display: grid;
+         grid-template-rows: repeat(2,350px);
+         grid-template-columns: repeat(3,350px);
+         column-gap: 20px;
+          padding-left: 20px;
+         }
+      .sbs > div > img{
+        width: 100%;
+          cursor: pointer;
+      }
+
+      .logo7 > img{
+        width: 100%;
+           
+     }
+
+      .sbb{
+          width: 90%;
+          margin: auto;
+         display: flex;
+        gap: 15px;
+          margin-bottom: 50px;
+      }
+      .sbb > div > img{
+         width: 100%;
+          cursor: pointer;
+      }
+     
+      .btt{
+        justify-content: center;
+        align-items: center;
+        padding-left: 600px;
+     }
+     .btt > button{
+         width: 160px;
+         height: 60px;
+         padding: 16px 14px;
+         background-color: #abc72c;
+         cursor: pointer;
+         text-align: center;
+         color: black;
+        display: inline-block;
+        font-size: 16px; 
+        border: 1px solid #abc72c;
+     }
+
+     .subcribe{
+         width: 1349px;
+         height: 148px;
+         background-color: #f2f2f2;
+         text-align: center;
+         margin: auto;
+         padding-top: 10px;
+         padding-bottom: 20px;
+     }
+     .subcribe > div > h1{
+         font-weight: bold;
+         font-size: 28px;
+         letter-spacing: 3px;
+         padding-top: 40px;
+     }
+
+    .esub{
+        display: flex;
+        justify-content: center;
+    
+    }
+    #email{
+        font-size: 18px;
+        padding: 10px;
+        padding-right: 140px;
+    }
+    .sub{
+        font-weight: bold;
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding: 10px;
+        cursor: pointer;
+    }
+     
+     #navbar>div>a{
+         text-decoration: none;
+         color: black;
+     }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <img src="https://cdn07.nnnow.com/web-images/master/navtree_metaData/59b2657be4b0e6b6e16a9180/1548053082431/se.png">
+    </div>
+<div id="container">
+    <div id="navbar">
+        <div> <a href="men.html">MEN</a></div>
+        <div> <a href="women.html">WOMEN</a> </div>
+        <div><a href="kid.html">KIDS</a></div>
+        <div><a href="seophora.html">SEPHORA</a></div>
+        <div><a href="brands.html">COLLECTIONS</a></div>
+        <div><a href="FOOTWEAR.html">FOOTWEAR</a></div>
+        <div><a href="BRANDS.html">BRANDS</a></div>
+     </div>
+
+<div class="img1">
+     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="https://logan.nnnow.com/content/dam/nnnow-project/09-march-2022/se/Lancome_TopBannerDesktop_Get7mlGenefique(1).jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h5>First slide label</h5> -->
+              <!-- <p>Some representative placeholder content for the first slide.</p> -->
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://logan.nnnow.com/content/dam/nnnow-project/31-mar-2022/se/SC_Topbanner_Newatsephoradesktop.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h5>Second slide label</h5> -->
+              <!-- <p>Some representative placeholder content for the second slide.</p> -->
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</div>
+
+
+<div class="nses" >
+    <div><button><a href="makeup.html">MAKEUP</a></button></div>
+    <div><button>BEAUTY MINIS UNDER 999</button></div>
+    <div><button>EVERYDAY ESSENTIALS</button></div>
+    <div><button>TRENDING NOW</button></div>
+    <div><button>EDITOR'S PICKS</button></div>
+    <div><button>TOP FRAGRANCES</button></div>
+</div>
+
+<div class="logo1">
+    <h2>#SephoraBrandOfTheWeek</h2>
+</div>
+
+<div class="sbc">
+    <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/16-march-2022/SC_BrandoftheweekstripDesktop.jpg" ></div>
+</div>
+
+
+
+<div class="logo2">
+    <img src="https://logan.nnnow.com/content/dam/nnnow-project/16-march-2022/justlanded.jpg" alt="">
+</div>
+
+<div class="tst">
+    <div><img src="https://cdn07.nnnow.com/web-images/medium/styles/V8NBQ3KRP6I/1641973124155/1.jpg" alt=""></div>
+    <div><img src="https://cdn19.nnnow.com/web-images/medium/styles/HNTNV1053NR/1644474571357/1.jpg" alt=""></div>
+    <div><img src="https://cdn03.nnnow.com/web-images/medium/styles/DST8JG893JI/1645680474489/1.jpg" alt=""></div>
+   <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/07-march-2022/se/Givenchy_Video_SS.jpg" alt=""></div>
+</div>
+
+<div class="logo3">
+    <img src="https://logan.nnnow.com/content/dam/nnnow-project/22-march-2022/Loyalty_Strip_Desk.jpg" alt="">
+    <img src="https://logan.nnnow.com/content/dam/nnnow-project/31-mar-2022/se/Sephora_HeaderStrip_ForASkin-tasticSummertext3310x240.jpg" alt="">
+</div>
+
+<div class="sba">
+    <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/31-mar-2022/se/Sephora_ContentP-story_HolyHyaluronic.jpg" alt=""></div>
+    <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/31-mar-2022/se/Sephora_ContentP-story__LushLips.jpg" alt=""></div>
+    <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/31-mar-2022/se/Sephora_ContentP-story_SilkySkin.jpg" alt=""></div>
+   
+</div>
+
+
+<div class="logo5"><img src="https://logan.nnnow.com/content/dam/nnnow-project/01-oct-2020/sephora/2OCT20_PREHEADER_4_DESK.jpg" alt=""></div>
+
+<div class="sbt">
+    <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/17-jan-2020/logo-dsk/scdsk.jpeg" alt=""></div>
+    <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/11-oct-2021-/12OCT21-TILE-MUFE(1).jpg" alt=""></div>
+    <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/17-jan-2020/logo-dsk/bendsk.jpg" alt=""></div>
+    <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/05-jan-2022/TF_Logo(1).jpg" alt=""></div>
+      </div>
+</div>
+
+<div class="logo6"><img src="https://logan.nnnow.com/content/dam/nnnow-project/01-oct-2020/sephora/2OCT20_PREHEADER_5_DESK.jpg" alt=""></div>
+
+<div class="sbs">
+    <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/31-mar-2022/se/SC_NOTB_BigByDefinitionMascara.jpg" alt=""></div>
+    <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/31-mar-2022/se/SC_NOTB_OutrageousPlumpLipgloss.jpg" alt=""></div>
+    <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/16-march-2022/HugoBoss_Newlaunch_NOTB(1).jpg" alt=""></div>
+    <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/20-march-2022/ABH_NOTB_NorvinaChromastix(1).jpg" alt=""></div>
+    <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/01-april-2022/Kayali_NOTB.jpg" alt=""></div>
+    <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/07-march-2022/se/Givenchy_NOTB.jpg" alt=""></div>
+</div>
+
+<div class="logo7"><img src="https://logan.nnnow.com/content/dam/nnnow-project/01-oct-2020/sephora/2OCT20_PREHEADER_7_DESK.jpg" alt=""></div>
+
+<div class="sbb">
+    <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/23-march-2022/se-blog/Sephora_MakingaLook_BlogCoverTileOption02.jpg" alt=""></div>
+    <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/24dec19/23DEC19_BLOG3.jpg" alt=""></div>
+    <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/24dec19/23DEC19_BLOG4.jpg" alt=""></div>
+   
+</div>
+<a href="seophora.html">
+<div class="btt">
+    <button> <span><i class="fa-solid fa-angle-up"></i></span>  BACK TO TOP</button> 
+</div>
+</a>
+
+<div class="subcribe">
+
+    <div>
+        <h1>GET THE LATEST NEWS & OFFERS IN BEAUTY & FASHION</h1>
+        <div class="esub">
+        <input id="email" type="email" placeholder="Enter your email address">
+        <button class="sub">SUBSCRIBE</button>
+         </div>
+    </div>
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krunal Bhandekar</title>
+
+    <script src="https://kit.fontawesome.com/4c322811d7.js" crossorigin="anonymous"></script>
+
+    <style>
+.background {
+            background-repeat: no-repeat;
+            width: 100px;
+            height: 63px;
+            filter: brightness(30%);
+            
+        }
+        img{
+            width:1255% ;
+            height:  1100%;
+        }
+
+        #out {
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            width: 23%;
+            top: 6%;
+            left: 450px;
+            padding: 25px;
+            transform: translate(-50% -50%);
+            position: absolute;
+            font-size: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            color: grey;
+        }
+
+        input {
+            border: 2px solid black;
+            width: 100%;
+            margin-top: 2px;
+            margin-bottom: 10px;
+            padding: 7px;
+            box-sizing: border-box;
+        }
+
+        #submit {
+            width: 100%;
+            background-color: #ff3399;
+            color: white;
+            border: none;
+            padding: 10px 0px;
+            margin-top: 20px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #submit:hover {
+            background-color: #c00563;
+        }
+
+        a {
+            color: #ff3399;
+        }
+
+        #name {
+            padding: 7px 0px;
+            border: none;
+        }
+
+        p {
+            font-size: 14px;
+            text-align: center;
+            color: grey;
+        }
+
+        i {
+            color: #ff3399;
+        }
+
+        @media only screen and (min-width: 421px) and (max-width: 780px) {
+           
+        img{
+            width:0% ;
+            height: 0%;
+        }
+        #out {
+            width: 80%;
+            margin: auto;
+            left: 0px;
+            right: 0px;
+            font-size: 20px;
+        }
+
+        }
+        @media only screen and (min-width: 80px) and (max-width: 420px) {
+           
+        img{
+            width:0% ;
+            height: 0%;
+        }
+        #out {
+            width: 80%;
+            margin: auto;
+            left: 0px;
+            right: 0px;
+            font-size: 15px;
+        }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+
+        <img src="http://farm8.staticflickr.com/7330/10383536115_1a8115af70_o.jpg" >
+
+    </div>
+
+    <div id="out">
+        <a href="login.html"> <i class="fa-solid fa-angle-left"></i></a>
+        <h2>CREATE ACCOUNT</h2>
+        <form>
+
+            <label>Name*</label>
+            <input id="user" type="text" required><br><br>
+            <label>Email*</label>
+            <input id="email" type="text" required>
+            <label>Password*</label>
+            <input id="pass" type="password" required>
+            <label>Phone Number*</label>
+            <input id="phone" type="text" required>
+
+            <input type="submit" id="submit" value="Continue">
+        </form>
+
+    </div>
+</body>
+
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit", signUpFun)
+
+    var userData = JSON.parse(localStorage.getItem("users")) || []
+
+    function signUpFun() {
+        event.preventDefault();
+
+        var userObj = {
+            name: document.querySelector("#user").value,
+            email: document.querySelector("#email").value,
+            password: document.querySelector("#pass").value,
+            phone: document.querySelector("#phone").value,
+        };
+        // console.lof(userObj)
+        userData.push(userObj)
+        console.log(userData)
+
+        if (document.querySelector("#email").value == "") {
+            alert("Please enter correct details")
+        }
+        else {
+            alert("Sign Up Succesfully")
+            window.location.href = "login.html"
+            localStorage.setItem("users", JSON.stringify(userData))
+        }
+
+    }
+</script>

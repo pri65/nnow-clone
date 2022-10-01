@@ -1,0 +1,164 @@
+#container{
+    width:95%;
+    margin:auto;
+  }
+  .nav{
+margin-bottom: 20px;
+    height: 60px;
+      width:100%;  
+      display:flex;
+      justify-content: space-between;
+      padding:10px 20px;
+  }
+ 
+ input{
+     width:80%;
+     height:40px;
+     border:none;
+     outline:none;
+     text-decoration:underline;
+     margin-top: 7.5px;
+   
+     
+ }
+ 
+ .shopp{
+     display:flex;
+    justify-content: space-evenly;
+     width:25%;
+ }
+ .shopp>a{
+   text-decoration: none;
+   color: black;
+ }
+ .navbar{
+     margin-top: 50px;
+     display:flex;
+     justify-content: space-evenly;
+     margin:auto;
+ }
+ .navbar>a{
+    color:black;
+     font:14px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: bold;
+     text-decoration: none;
+     margin-top: 20px;
+
+ }
+ #label{
+   width:100%;
+   margin: auto;
+   margin-top: 25px; 
+ }
+ #label>img{
+  width: 100%;
+ }
+ .label-1>img{
+   width: 100%;
+ }
+ .label-2>img{
+   width: 100%;
+ }
+ .label-1{
+  width:100%;
+  margin:auto;
+  margin-top: 25px;   
+}
+.label-2{
+  width:100%;
+  margin-top: 25px;   
+  margin:auto;
+}
+.gr{
+  display: flex;
+  margin: auto;
+  width:90%;
+  gap: 15px;
+  justify-content:space-between;
+  margin-top: 25px; 
+  
+}
+.box{
+  height:95px;
+  width:25%;
+  display: flex;
+justify-content: center;
+  border: 1px solid black;
+  background-color: #241f21;
+}
+.box>p{
+  margin-top: 35px;
+  font:60px;
+  color: white;
+}
+h1{
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+#products{
+  width:100%;
+  margin-top: 25px; 
+       display:flex;
+      gap: 15px;
+        justify-content: space-between;
+}
+
+#products>div>img{
+ width: 100%;
+}
+.bb{
+  width:100%;
+  gap: 15px;
+  display:flex;
+  justify-content: space-between;
+  margin-top: 25px; 
+}
+
+.bb>div>img{
+ width: 100%;
+}
+
+.sep{
+  margin-top: 25px; 
+  width:100%;
+ gap: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.card{
+  margin-top: 25px; 
+  width:15%;
+  border: none;
+}
+
+.gt{
+  width: 100%;
+}
+.gt-1{
+  width: 100%;
+}
+.news{
+  margin-top: 25px; 
+  margin-top: 100px;
+  width: 100%;
+  height: 150px;
+  background-color: #f2f2f2;
+}
+.news>h1{
+  font-style: normal;
+}
+.news>div{
+  display:flex;
+  width: 50%;
+  margin:auto;
+  text-decoration: none;
+}
+#bb{
+  border: none;
+  background-color: black;
+  color:white;
+  width:70%;
+  font-size:30px;
+}

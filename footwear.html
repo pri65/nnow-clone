@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>priyanka</title>
+  <style>
+    #container {
+      width: 100%;
+      margin: auto;
+
+    }
+
+    #navbar {
+      display: flex;
+      justify-content: space-evenly;
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 40px;
+      cursor: pointer;
+    }
+
+    .img1 {
+
+      margin: auto;
+      padding: 50px;
+      padding-left: 60px;
+      /* border: solid 1px red; */
+
+    }
+
+    .img1>img {
+      width: 1200px;
+      height: 600px;
+      cursor: pointer;
+      justify-content: center;
+    }
+
+    .logo1>img {
+      width: 700px;
+      height: 800px;
+    }
+
+    .duf {
+      width: 90%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 40px 0px;
+      margin: auto;
+    }
+
+    .duf>div>a>img {
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .part1 {
+      display: flex;
+    }
+
+    .logo2>img {
+      width: 1290px;
+      height: 113.38px;
+      padding-left: 60px;
+    }
+
+    .wh {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 40px 0px;
+      margin: auto;
+    }
+
+    .wh>div>img {
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .logo3 {
+      width: 90%;
+      margin: auto;
+    }
+
+    .logo3>img {
+      width: 100%;
+    }
+
+    .bi {
+      width: 90%;
+      display: flex;
+      gap: 20px;
+      padding: 40px 0px;
+      margin: auto;
+    }
+
+    .bi>div>img {
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .logo4 {
+      width: 90%;
+      margin: auto;
+    }
+
+    .logo4>img {
+      width: 100%;
+    }
+
+    .waylf {
+      width: 90%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      padding: 40px 0px;
+      margin: auto;
+    }
+
+    .waylf>div>img {
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .logo5 {
+      width: 90%;
+      margin: auto;
+    }
+
+    .logo5>img {
+      width: 100%;
+    }
+
+    .na {
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: auto;
+    }
+
+    .na>div>img {
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .logo6 {
+      width: 90%;
+      margin: auto;
+    }
+
+    .logo6>img {
+      width: 100%;
+    }
+
+    .fb {
+      width: 90%;
+      margin: auto;
+    }
+
+    .fb>div>img {
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .fb1 {
+      width: 90%;
+      margin: auto;
+    }
+
+    .fb1>div>img {
+      width: 100%;
+    }
+
+    .btt {
+     width: 13%;
+     margin: auto;
+    }
+
+    .btt>a>button {
+      width: 160px;
+      height: 60px;
+      padding: 16px 14px;
+      background-color: #abc72c;
+      cursor: pointer;
+      text-align: center;
+      color: black;
+      font-size: 16px;
+      border: none;
+    }
+
+    .subcribe {
+      width: 90%;
+      margin: auto;
+      background-color: #f2f2f2;
+      text-align: center;
+      margin: auto;
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+
+    .subcribe>div>h1 {
+      font-weight: bold;
+      font-size: 28px;
+      letter-spacing: 3px;
+      padding-top: 40px;
+    }
+
+    .esub {
+      display: flex;
+      justify-content: center;
+
+    }
+
+    #email {
+      font-size: 18px;
+      padding: 10px;
+      padding-right: 140px;
+    }
+
+    .sub {
+      font-weight: bold;
+      background-color: black;
+      color: white;
+      font-size: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    #navbar>div>a {
+      color: black;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="navbar">
+      <div> <a href="men.html">MEN</a> </div>
+      <div> <a href="women.html">WOMEN</a> </div>
+      <div> <a href="kid.html">KIDS</a> </div>
+      <div><a href="seophora.html">SEPHORA</a></div>
+      <div><a href="brands.html">COLLECTIONS</a></div>
+      <div><a href="footwear.html">FOOTWEAR</a></div>
+      <div><a href="brands.html">BRANDS</a></div>
+    </div>
+
+    <div class="img1">
+
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5"
+            aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img
+              src="https://logan.nnnow.com/content/dam/nnnow-project/04-jan-2022/17DEC21-FLP-Refresh-TopBanner-02-Desk.jpg"
+              class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h5>First slide label</h5> -->
+              <!-- <p>Some representative placeholder content for the first slide.</p> -->
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-TopBanner-01-Desk.jpg"
+              class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h5>Second slide label</h5> -->
+              <!-- <p>Some representative placeholder content for the second slide.</p> -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-TopBanner-04-Desk.jpg"
+              class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h5>Third slide label</h5> -->
+              <!-- <p>Some representative placeholder content for the third slide.</p> -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://logan.nnnow.com/content/dam/nnnow-project/04-jan-2022/17DEC21-FLP-Refresh-TopBanner-02-Desk.jpg"
+              class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h5>Fourth slide label</h5> -->
+              <!-- <p>Some representative placeholder content for the third slide.</p> -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-TopBanner-03-Desk.jpg"
+              class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h5>Fifth slide label</h5> -->
+              <!-- <p>Some representative placeholder content for the third slide.</p> -->
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    </div>
+    <div class="part1">
+      <!-- <div class="logo1">
+    <img src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-ForHIM.jpg" alt="">
+</div> -->
+      <div class="duf">
+        <div><a href="foot1.html"><img
+              src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-ForHimActive.jpg"
+              alt=""></a></div>
+        <div><a href="foot1.html"><img
+              src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-ForHimSneakers.jpg"
+              alt=""></a></div>
+        <div><a href="foot1.html"><img
+              src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-ForHimSlip-Ons.jpg"
+              alt=""></a></div>
+        <div><a href="foot1.html"><img
+              src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-ForHimFormals.jpg"
+              alt=""></a></div>
+        <div><a href="foot1.html"><img
+              src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-ForHimLoafers.jpg"
+              alt=""></a></div>
+        <div><a href="foot1.html"><img
+              src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-ForHimFlipflop.jpg"
+              alt=""></a></div>
+      </div>
+    </div>
+
+    <div class="wh">
+      <div><img
+          src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-ForHerSneakers.jpg"
+          alt=""></div>
+      <div><img
+          src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-ForHerSandals.jpg"
+          alt=""></div>
+      <div><img
+          src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-ForHerFlipflop.jpg"
+          alt=""></div>
+      <div><img
+          src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-ForHerHeels.jpg"
+          alt=""></div>
+
+    </div>
+
+    <div class="logo3">
+      <img
+        src="https://logan.nnnow.com/content/dam/nnnow-project/18-april-2021/fwlp/20APR21-FootwearLP-AllAboardTheTrendTrain-DSK.jpg"
+        alt="">
+    </div>
+
+    <div class="bi">
+      <div><img
+          src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-AllAboardTheTrendTrain-1.jpg"
+          alt=""></div>
+      <div><img
+          src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-AllAboardTheTrendTrain-2.jpg"
+          alt=""></div>
+      <div><img
+          src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-AllAboardTheTrendTrain-3.jpg"
+          alt=""></div>
+      <div><img
+          src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-AllAboardTheTrendTrain-4.jpg"
+          alt=""></div>
+
+    </div>
+
+    <div class="logo4">
+      <img
+        src="https://logan.nnnow.com/content/dam/nnnow-project/24-april-2021/20APR21-FootwearLP-Cheap&chicStrip1-DSK.jpg"
+        alt="">
+      <img
+        src="https://logan.nnnow.com/content/dam/nnnow-project/18-april-2021/fwlp/20APR21-FootwearLP-BrandsinFocus-DSK.jpg"
+        alt="">
+    </div>
+
+    <div class="waylf">
+      <div><img
+          src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-BrandsinFocus-1.jpg"
+          alt=""></div>
+      <div><img
+          src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-BrandsinFocus-2.jpg"
+          alt=""></div>
+      <div><img
+          src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-BrandsinFocus-4.jpg"
+          alt=""></div>
+      <div><img
+          src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-BrandsinFocus-3.jpg"
+          alt=""></div>
+      <div><img
+          src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-BrandsinFocus-5.jpg"
+          alt=""></div>
+      <div><img
+          src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-BrandsinFocus-6.jpg"
+          alt=""></div>
+
+    </div>
+
+    <div class="logo5">
+      <img
+        src="https://logan.nnnow.com/content/dam/nnnow-project/18-april-2021/fwlp/20APR21-FootwearLP-TheLuxeStudio-DSK.jpg"
+        alt="">
+    </div>
+
+    <div class="na">
+      <div><img
+          src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-TheLuxeStudio1.jpg"
+          alt=""></div>
+      <div><img
+          src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-TheLuxeStudio2.jpg"
+          alt=""></div>
+
+    </div>
+
+    <div class="logo6"><img
+        src="https://logan.nnnow.com/content/dam/nnnow-project/21-april-2021/fw-lp/20APR21-FootwearLP-Shoecaretips-DSK.jpg"
+        alt=""></div>
+
+    <div class="fb">
+      <div><img
+          src="https://logan.nnnow.com/content/dam/nnnow-project/20-dec-2021/footwear/17DEC21-FLP-Refresh-GoodForYourSole-DSK.jpg"
+          alt=""></div>
+    </div>
+    <div class="fb1">
+      <div><img
+          src="https://logan.nnnow.com/content/dam/nnnow-project/18-april-2021/fwlp/20APR21-FootwearLP-ShopAll-DSK.jpg"
+          alt=""></div>
+    </div>
+    <br>
+
+    <div class="btt">
+      <a href="footwear.html">
+
+        <button> <span><i class="fa-solid fa-angle-up"></i></span> BACK TO TOP</button>
+
+      </a>
+    </div>
+
+    <div class="subcribe">
+
+      <div>
+        <h1>GET THE LATEST NEWS & OFFERS IN BEAUTY & FASHION</h1>
+        <div class="esub">
+          <input id="email" type="email" placeholder="Enter your email address">
+          <button class="sub">SUBSCRIBE</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
+</html>

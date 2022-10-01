@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krunal Bhandekar</title>
+    <script src="https://kit.fontawesome.com/4c322811d7.js" crossorigin="anonymous"></script>
+    <style>
+        #logo {
+            padding-left: 20px;
+        }
+
+        a>img {
+            width: 125px;
+        }
+
+        #anchor {
+            background-color:
+                #2ba2e4;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px 0px 8px 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        i {
+            font-size: 5px;
+            background-color: #ec008c;
+            color: white;
+            padding: 6px;
+            border-radius: 70%;
+        }
+
+        #lower {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        #container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr); 
+        }
+        #container>div{
+            padding: 20px;
+        }
+        #lower>div:nth-child(2) {
+            width: 30%;
+            padding: 20px 0px 0px 20px;
+        }
+
+        #lower>div:nth-child(2)>input {
+            width: 97%;
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 10px;
+            border: none;
+            background-color:
+                #f2f2f2;
+            outline: none;
+            padding: 10px 0px 10px 10px;
+        }
+
+        #lower>div:nth-child(2)>button {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            background-color:rgb(249, 226, 95);
+            border: none;
+            padding: 10px 0px;
+
+        }
+       
+        #overview{
+            margin-top: 30px;
+            background-color: #f2f2f2;
+        }
+        p{
+            font-weight: bold;
+        }
+        #btn{
+            width: 100%;
+            border: none;
+            background-color: #ec008c;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            padding: 17px 0px;
+            border-radius: 5px;
+        }
+      #btn:hover{
+        background-color: #ff3399;
+      }
+       #container>div>button{
+           background-color: red;
+           color: white;
+           border: none;
+           font-weight: bold;
+           padding: 5px;
+       }
+       #container>div>button:hover{
+        background-color: rgb(112, 3, 3);
+       }
+     
+    </style>
+</head>
+
+<body>
+    <div id="logo">
+        <a href="landing.html"> <img
+                src="https://cdn02.nnnow.com/web-images/master/navtree_metaData/59b2425ae4b0d70964ee66e0/1505806763887/12NNNOWLOGODESKTOP.png"></a>
+    </div>
+    <div id="anchor">
+        <div>CHECKOUT</div>
+        <div>
+            <a href="checkout.html"><i class="fa-solid fa-1"></i>&nbsp Shipping</a>&nbsp &nbsp;
+            <a href="address.html"><i class="fa-solid fa-2"></i></i>&nbsp Payment</a>
+        </div>
+        <div></div>
+    </div>
+
+    <div id="lower">
+
+        <div id="container"></div>
+
+        <div>
+            <input id="pro" type="text" placeholder="Promo code"><br>
+            <button id="btnp"><img src="https://static.nnnow.com/client/assets/images/promotions/icon_promo.png"> &nbsp APPLY
+                PROMO
+                CODE <br> TO GET 20% OFF </button>
+
+            <div id="overview">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>OVERVIEW</th>
+                            <th>PRICE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>No. of Items-</td>
+                            <td class="length"></td>
+                        </tr>
+                        <tr>
+                            <td>GST-</td>
+                            <td>0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Delivery Charges-</td>
+                            <td>0.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr>
+               
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Total-</th>
+                            <th class="total"></th>
+                        </tr>
+                    </thead>
+                </table>
+                <a href="address.html"> <button id="btn">CONTINUE</button></a>
+               
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    var cartData=JSON.parse(localStorage.getItem("cart"));
+    console.log(cartData)
+
+    var total=cartData.reduce(function(sum,el){
+        return sum+Number(el.price)
+    },0);
+
+    var length=cartData.length;
+    document.querySelector(".length").innerText= length
+    console.log(length);
+
+    console.log(total)
+localStorage.setItem("ftotal",total)
+document.querySelector(".total").innerText = "₹" + " " +total;
+
+cartData.map(function(elem,index){
+    var box=document.createElement("div")
+    var img=document.createElement("img")
+    img.src=elem.image_url;
+
+    var name=document.createElement("p")
+    name.textContent=elem.name;
+
+    var price=document.createElement("p")
+    price.textContent=elem.price;
+
+    var btn=document.createElement("button");
+    btn.innerText="Remove";
+    btn.addEventListener("click",function(){
+        removeItem(elem,index);
+    })
+    box.append(img,name,price,btn);
+    document.querySelector("#container").append(box)
+})
+
+function removeItem(el,index){
+    console.log(el,index)
+    cartData.splice(index,1);
+    console.log(cartData)
+    localStorage.setItem("cart",JSON.stringify(cartData))
+    window.location.reload()
+}
+ document.querySelector("#btnp").addEventListener("click",discount);
+ var count=0
+ function discount(){
+     var input=document.querySelector("#pro").value;
+
+     if(input=="masai20" && count==0){
+         total=total*0.8
+         document.querySelector(".total").innerText=  Math.ceil(total)
+         alert("Promo code applied")
+         count++
+         localStorage.setItem("ftotal",total)
+     }
+     else if(input=="masai20" && count>0){
+         alert("Promo code expired")
+     }
+     else{
+         alert("Enter a valid promo code")
+     }
+ }
+</script>

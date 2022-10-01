@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Ganesh Sabale</title>
+    <style>
+        #container {
+            width: 100%;
+            margin: auto;
+
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 40px;
+            cursor: pointer;
+        }
+
+        .img1 {
+
+            margin: auto;
+            padding: 50px;
+            padding-left: 60px;
+            /* border: solid 1px red; */
+
+        }
+
+        .img1>img {
+            width: 1232px;
+            height: 456px;
+            cursor: pointer;
+            justify-content: center;
+        }
+
+        .nses {
+
+            display: flex;
+            gap: 20px;
+            /* border: solid 1px red; */
+            padding-left: 70px;
+            padding-right: 70px;
+            padding-top: 20px;
+            padding-bottom: 60px;
+            margin: auto;
+
+        }
+
+        .nses>div>img {
+
+            width: 289px;
+            height: 110px;
+            cursor: pointer;
+
+        }
+
+        .logo1>img {
+            width: 1250px;
+            height: 98.58px;
+            padding-left: 100px;
+            justify-content: center;
+        }
+
+        .sbc {
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+            /* border: solid 1px red; */
+            padding: 20px;
+            padding-left: 70px;
+            padding-bottom: 70px;
+            margin: auto;
+
+        }
+
+        .sbc>div>a>img {
+            width: 290px;
+            height: 258px;
+            cursor: pointer;
+        }
+
+        .logo2>img {
+            width: 1250px;
+            height: 98.58px;
+            padding-left: 100px;
+            justify-content: center;
+        }
+
+        .tst {
+
+            display: flex;
+            gap: 20px;
+            /* border: solid 1px red; */
+            padding: 20px;
+            padding-left: 70px;
+            padding-bottom: 70px;
+            margin: auto;
+
+
+        }
+
+        .tst>div>img {
+            width: 290px;
+            height: 304px;
+            cursor: pointer;
+        }
+
+        .logo3>img {
+            width: 1250px;
+            height: 98.58px;
+            padding-left: 100px;
+            justify-content: center;
+        }
+
+        .sba {
+
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            /* border: solid 1px red; */
+            padding: 20px;
+            padding-left: 70px;
+            padding-bottom: 70px;
+            margin: auto;
+
+
+        }
+
+        .sba>div>img {
+            width: 327px;
+            height: 314px;
+            cursor: pointer;
+        }
+
+        .logo4>img {
+            width: 1250px;
+            height: 98.58px;
+            padding-left: 100px;
+            justify-content: center;
+        }
+
+        .sbg {
+
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            /* border: solid 1px red; */
+            padding: 20px;
+            padding-left: 70px;
+            padding-bottom: 70px;
+            margin: auto;
+
+        }
+
+        .sbg>div>img {
+            width: 593px;
+            height: 400px;
+            cursor: pointer;
+        }
+
+        .logo5>img {
+            width: 1250px;
+            height: 98.58px;
+            padding-left: 100px;
+            justify-content: center;
+        }
+
+        .sbt {
+
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            /* border: solid 1px red; */
+            padding: 20px;
+            padding-left: 70px;
+            padding-bottom: 70px;
+            margin: auto;
+        }
+
+        .sbt>div>img {
+            width: 327px;
+            height: 314px;
+            cursor: pointer;
+        }
+
+        .logo6>img {
+            width: 1250px;
+            height: 98.58px;
+            padding-left: 100px;
+            justify-content: center;
+        }
+
+        .sbs {
+
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            /* border: solid 1px red; */
+            padding: 20px;
+            padding-left: 70px;
+            padding-bottom: 70px;
+            margin: auto;
+        }
+
+        .sbs>div>img {
+            width: 289px;
+            height: 301px;
+            cursor: pointer;
+        }
+
+        .logo7>img {
+            width: 1250px;
+            height: 98.58px;
+            padding-left: 100px;
+            justify-content: center;
+        }
+
+        .sbb {
+
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            /* border: solid 1px red; */
+            padding: 20px;
+            padding-left: 70px;
+            padding-bottom: 70px;
+            margin: auto;
+        }
+
+        .sbb>div>img {
+            width: 242px;
+            height: 261px;
+            cursor: pointer;
+        }
+
+        .btt {
+            justify-content: center;
+            align-items: center;
+            padding-left: 600px;
+        }
+
+        .btt>button {
+            width: 160px;
+            height: 60px;
+            padding: 16px 14px;
+            background-color: #abc72c;
+            cursor: pointer;
+            text-align: center;
+            color: black;
+            display: inline-block;
+            font-size: 16px;
+            border: 1px solid #abc72c;
+        }
+
+        .subcribe {
+            width: 1349px;
+            height: 148px;
+            background-color: #f2f2f2;
+            text-align: center;
+            margin: auto;
+            padding-top: 10px;
+            padding-bottom: 20px;
+        }
+
+        .subcribe>div>h1 {
+            font-weight: bold;
+            font-size: 28px;
+            letter-spacing: 3px;
+            padding-top: 40px;
+        }
+
+        .esub {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        #email {
+            font-size: 18px;
+            padding: 10px;
+            padding-right: 140px;
+        }
+
+        .sub {
+            font-weight: bold;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        #footer>div {
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        #footer>div:nth-child(1) {
+            width: 45%;
+        }
+
+        #footer>div>a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #footer>div>a:hover {
+            color: #ec008c;
+        }
+
+        #footer>div:nth-child(2) {
+            width: 13%;
+        }
+
+        #footer>div:nth-child(3) {
+            width: 25%;
+        }
+
+        #footer>div:nth-child(4) {
+            width: 9%;
+        }
+
+        #footer>div:nth-child(5) {
+            width: 62%;
+        }
+
+        #footer>div:nth-child(6) {
+            width: 12%;
+        }
+
+        #footer>div:nth-child(7) {
+            width: 47%;
+        }
+
+        #footer>div:nth-child(3),
+        #footer>div:nth-child(7),
+        #footer>div:nth-child(5) {
+            font-size: 13px;
+        }
+
+        #footer>div:nth-child(7),
+        #footer>div:nth-child(5),
+        #footer>div:nth-child(6) {
+            margin-top: 2px;
+        }
+        h4{
+          font-size: 15px;
+        }
+        #navbar>div>a{
+          text-decoration: none;
+          color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="navbar">
+            <div><a href="men.html">MEN</a></div>
+            <div><a href="women.html">WOMEN</a></div>
+            <div><a href="kid.html">KIDS</a></div>
+            <div><a href="seophora.html">SEOPHORA</a></div>
+            <div><a href="brands.html">COLLECTIONS</a></div>
+            <div><a href="footwear.html">FOOTWEAR</a></div>
+            <div><a href="brands.html">BRANDS</a></div>
+        </div>
+
+        <div class="img1">
+
+
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="https://logan.nnnow.com/content/dam/nnnow-project/26-mar-2022/28MARCH22-KLP-DONUTS-UPTO50_OFF-DESKTOP1.jpg"
+                            class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <!-- <h5>First slide label</h5> -->
+                            <!-- <p>Some representative placeholder content for the first slide.</p> -->
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="https://logan.nnnow.com/content/dam/nnnow-project/29-dec-2021/29DEC21-Donuts-NewStylesforKids-KLP-Topbanner-Desk.jpg"
+                            class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <!-- <h5>Second slide label</h5> -->
+                            <!-- <p>Some representative placeholder content for the second slide.</p> -->
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                crossorigin="anonymous"></script>
+
+
+        </div>
+
+
+        <div class="nses">
+            <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/02-nov-2020/Quicklinks-01.jpg" alt="">
+            </div>
+            <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/02-nov-2020/Quicklinks-02.jpg" alt="">
+            </div>
+            <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/02-nov-2020/Quicklinks-03.jpg" alt="">
+            </div>
+            <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/02-nov-2020/Quicklinks-04.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="logo1">
+            <img src="https://logan.nnnow.com/content/dam/nnnow-project/02-nov-2020/kids-lp-revised/revised-header/KLP-HEADER-Category-Desk.jpg"
+                alt="">
+        </div>
+
+        <div class="sbc">
+            <div><a href="kid1.html"><img
+                        src="https://logan.nnnow.com/content/dam/nnnow-project/fm-bp/1-Tees-and-Tops.png" alt=""></a>
+            </div>
+            <div><a href="kid1.html"><img src="https://logan.nnnow.com/content/dam/nnnow-project/fm-bp/2-Dresses.png"
+                        alt=""></a></div>
+            <div><a href="kid1.html"><img src="https://logan.nnnow.com/content/dam/nnnow-project/fm-bp/3-Footwear.png"
+                        alt=""></a></div>
+            <div><a href="kid1.html"><img src="https://logan.nnnow.com/content/dam/nnnow-project/fm-bp/4-Ethnicwear.png"
+                        alt=""></a></div>
+            <div><a href="kid1.html"><img src="https://logan.nnnow.com/content/dam/nnnow-project/fm-bp/5-Winterwear.png"
+                        alt=""></a></div>
+            <div><a href="kid1.html"><img src="https://logan.nnnow.com/content/dam/nnnow-project/fm-bp/6-Babysets.png"
+                        alt=""></a></div>
+            <div><a href="kid1.html"><img src="https://logan.nnnow.com/content/dam/nnnow-project/fm-bp/7-Footwear.png"
+                        alt=""></a></div>
+            <div><a href="kid1.html"><img
+                        src="https://logan.nnnow.com/content/dam/nnnow-project/fm-bp/8-Essentials(1).png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="logo2">
+            <img src="https://logan.nnnow.com/content/dam/nnnow-project/02-nov-2020/KLP-HEADER-DEALS-Header-Desk.jpg"
+                alt="">
+        </div>
+
+        <div class="tst">
+            <div><img
+                    src="https://logan.nnnow.com/content/dam/nnnow-project/08-dec-2021/9DEC21-KLP-UL-sweettreatsdeal.jpg"
+                    alt=""></div>
+            <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/12-feb-2021/12FEB21-KLP-DEAL2-USPA(1).jpg"
+                    alt=""></div>
+            <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/12-feb-2021/12FEB21-KLP-DEAL3-FM(1).jpg"
+                    alt=""></div>
+            <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/31-dec-2020/01JAN21-KLP-DEAL4-NewUser.jpg"
+                    alt=""></div>
+        </div>
+
+        <div class="logo3">
+            <img src="https://logan.nnnow.com/content/dam/nnnow-project/02-nov-2020/kids-lp-revised/revised-header/KLP-HEADER-Age-Desk.jpg"
+                alt="">
+        </div>
+
+        <div class="sba">
+            <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/02-nov-2020/ShopByAge-BABY.jpg" alt="">
+            </div>
+            <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/02-nov-2020/ShopByAge-TODDLER.jpg" alt="">
+            </div>
+            <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/02-nov-2020/ShopByAge-TWEENS.jpg" alt="">
+            </div>
+            <!-- <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/02-nov-2020/ShopByAge-TEENS.jpg" alt=""></div> -->
+        </div>
+
+        <div class="logo4">
+            <img src="https://logan.nnnow.com/content/dam/nnnow-project/02-nov-2020/kids-lp-revised/revised-header/KLP-HEADER-Gender-Desk.jpg"
+                alt="">
+        </div>
+
+        <div class="sbg">
+            <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/fm-bp/Gender-Boys.png" alt=""></div>
+            <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/02-nov-2020/ShopbyGender-GIRLS.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class="logo5"><img
+                src="https://logan.nnnow.com/content/dam/nnnow-project/02-nov-2020/kids-lp-revised/revised-header/KLP-HEADER-Trend-Desk.jpg"
+                alt=""></div>
+
+        <div class="sbt">
+            <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/fm-bp/KLP-Shop-by-Trends-01.jpg" alt="">
+            </div>
+            <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/fm-bp/KLP-Shop-by-Trends-02.jpg" alt="">
+            </div>
+            <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/fm-bp/KLP-Shop-by-Trends-05.jpg" alt="">
+            </div>
+            <!-- <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/04-jan-2022/FLYINGMACHINE.jpg" alt=""></div> -->
+            <!-- <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/10-oct-2021/mlp/THBIF.jpg" alt=""></div> -->
+        </div>
+
+        <div class="logo6"><img
+                src="https://logan.nnnow.com/content/dam/nnnow-project/02-nov-2020/kids-lp-revised/revised-header/KLP-HEADER-Style-Desk.jpg"
+                alt=""></div>
+
+        <div class="sbs">
+            <div><img
+                    src="https://logan.nnnow.com/content/dam/nnnow-project/02-nov-2020/kids-lp-revised/Shopbystyle-01(1).jpg"
+                    alt=""></div>
+            <div><img
+                    src="https://logan.nnnow.com/content/dam/nnnow-project/02-nov-2020/kids-lp-revised/Shopbystyle-02(1).jpg"
+                    alt=""></div>
+            <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/fm-bp/Shopbystyle-03(2).jpg" alt=""></div>
+            <div><img
+                    src="https://logan.nnnow.com/content/dam/nnnow-project/02-nov-2020/kids-lp-revised/Shopbystyle-04(1).jpg"
+                    alt=""></div>
+            <!-- <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/10-oct-2021/mlp/THBIF.jpg" alt=""></div> -->
+        </div>
+
+        <div class="logo7"><img
+                src="https://logan.nnnow.com/content/dam/nnnow-project/02-nov-2020/kids-lp-revised/revised-header/KLP-HEADER-Brand-Desk.jpg"
+                alt=""></div>
+
+        <div class="sbb">
+            <div><img
+                    src="https://logan.nnnow.com/content/dam/nnnow-project/19-jan-2022/19JAN22-KLP-Shopbybrand-Donuts.jpg"
+                    alt=""></div>
+            <div><img
+                    src="https://logan.nnnow.com/content/dam/nnnow-project/19-jan-2022/19JAN22-KLP-Shopbybrand-Sugr-Girl.jpg"
+                    alt=""></div>
+            <div><img
+                    src="https://logan.nnnow.com/content/dam/nnnow-project/19-jan-2022/19JAN22-KLP-Shopbybrand-Ruggers.Jr.jpg"
+                    alt=""></div>
+            <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/02-nov-2020/Brands-in-Focus-2-USPA.jpg"
+                    alt=""></div>
+            <!-- <div><img src="https://logan.nnnow.com/content/dam/nnnow-project/10-oct-2021/mlp/THBIF.jpg" alt=""></div> -->
+        </div>
+        <a href="kid.html">
+            <div class="btt">
+                <button> <span><i class="fa-solid fa-angle-up"></i></span> BACK TO TOP</button>
+            </div>
+        </a>
+
+        <div class="subcribe">
+
+            <div>
+                <h1>GET THE LATEST NEWS & OFFERS IN BEAUTY & FASHION</h1>
+                <div class="esub">
+                    <input id="email" type="email" placeholder="Enter your email address">
+                    <button class="sub">SUBSCRIBE</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="footer">
+
+        <div>
+            <a href="who.html">
+                <h4>WHO WE ARE</h4>
+            </a>
+            <a href="https://www.nnnow.com/customercare">
+                <h4>FREQUENTLY ASKED QUESTIONS</h4>
+            </a>
+            <a href="contactus.html">
+                <h4>CONTACT US</h4>
+            </a>
+        </div>
+    
+        <div>
+            <a href="https://www.facebook.com/heynnnow"> <i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/heynnnow/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/heynnnow"> <i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UCQ2fMb06LyWA0S5upVp2UJg"> <i class="fa-brands fa-youtube"></i></a>
+        </div>
+    
+        <div>
+            <a> 2022 NNNOW</a>
+            <a href="https://www.nnnow.com/privacypolicy">Privacy Policy</a>
+            <a href="https://www.nnnow.com/termsconditions">Terms & Conditions</a>
+        </div>
+    
+        <div>
+            <h4>TOP BRANDS</h4>
+        </div>
+    
+        <div>
+            <a href="https://uspoloassn.nnnow.com/">U.S. Polo Assn.</a>
+            <a href="https://aeropostale.nnnow.com/">Aeropostale</a>
+            <a href="https://edhardy.nnnow.com/">Ed Hardy</a>
+            <a href="https://flyingmachine.nnnow.com/">Flying Machine</a>
+            <a href="https://sephora.nnnow.com/">Seophora</a>
+            <a href="https://thechildrensplace.nnnow.com/">The Children's Place</a>
+            <a href="https://arrow.nnnow.com/">Arrow</a>
+            <a href="https://tommyhilfiger.nnnow.com/">Tommy Hilfiger</a>
+            <a href="https://calvinklein.nnnow.com/">Calvin Klein</a>
+        </div>
+    
+        <div>
+            <h4>TOP CATEGORIES</h4>
+        </div>
+    
+        <div>
+            <a href="https://www.nnnow.com/men-clothing">Men Clothing</a>
+            <a href="https://www.nnnow.com/beauty">Beauty</a>
+            <a href="https://www.nnnow.com/men-accessories">Men Accesories</a>
+            <a href="https://www.nnnow.com/kids-fashion">Kids</a>
+            <a href="https://www.nnnow.com/women-accessories">Women Accesories</a>
+            <a href="https://www.nnnow.com/all-categories?os=true&src=from_footer">Offers</a>
+            <a href="https://www.nnnow.com/all-categories?na&src=from_footer">New Arrivals</a>
+        </div>
+    
+    </div>
+</body>
+
+</html>

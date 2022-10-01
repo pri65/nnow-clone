@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+    <title>Ganesh Sabale</title>
+    <style>
+    #cont{
+        width: 100%;
+        margin: auto;
+        
+    }
+  #navbar{
+      display: flex;
+      justify-content: space-evenly;
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 40px;  
+      cursor: pointer; 
+      
+  }
+
+  .abc > a{
+      color: black;
+  }
+  .img1{
+      display: flex;
+      justify-content: center;
+  }
+  #container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: auto;
+            padding: 15px;
+        }
+        #container > div{
+            width: 70%;
+            margin: auto;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            padding: 5px 15px 5px 15px;
+            border-radius: 10px;
+
+        }
+        .box2{
+            display: flex;
+            justify-content: space-around;
+        }
+        .img{
+            display: block;
+            margin: auto;
+            border-radius: 5px;
+        }
+        .name{
+            width: 85%;
+            text-align: center;
+            padding-left: 20px;
+            color: black;
+
+        }
+        .price{
+            padding-left: 30px;
+        }
+        .strkprice{
+            padding-right: 40px;
+            text-decoration: line-through;
+        }
+        h1{
+            text-align: center;
+            color: #ff3399;
+        }
+        .btn{
+            display: block;
+            margin: auto;
+            color: white;
+            background-color: #ff3399;
+            padding: 6px 15px 6px 15px;
+            border-radius: 6px;
+            border-color: transparent;
+        }
+        .btncart{
+          display: block;
+          margin-left: 90%;
+          margin-top: 15px;
+          font-size: 18px;
+          padding: 10px;
+          border-radius: 4px;
+          font-weight: bold;
+          background-color: #ff3399;
+          border: #ff3399;
+        
+        }
+        a{
+          color: white;
+        }
+        #sortNames{
+          background-color: white;
+          padding: 5px;
+          margin-left: 10px;
+          font-weight: bold;
+        }
+        #sortPrice{
+          background-color: white;
+          padding: 5px;
+          margin-left: 10px;
+          font-weight: bold;
+        }
+        .btt{
+        justify-content: center;
+        align-items: center;
+        padding-left: 600px;
+     }
+     .btt > button{
+         width: 160px;
+         height: 60px;
+         padding: 16px 14px;
+         background-color: #abc72c;
+         cursor: pointer;
+         text-align: center;
+         color: black;
+        display: inline-block;
+        font-size: 16px; 
+        border: 1px solid #abc72c;
+     }
+
+     .subcribe{
+         width: 1349px;
+         height: 148px;
+         background-color: #f2f2f2;
+         text-align: center;
+         margin: auto;
+         padding-top: 10px;
+         padding-bottom: 20px;
+     }
+     .subcribe > div > h1{
+         font-weight: bold;
+         font-size: 28px;
+         letter-spacing: 3px;
+         padding-top: 40px;
+     }
+
+    .esub{
+        display: flex;
+        justify-content: center;
+    
+    }
+    #email{
+        font-size: 18px;
+        padding: 10px;
+        padding-right: 140px;
+    }
+    .sub{
+        font-weight: bold;
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    #footer>div {
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        #footer>div:nth-child(1) {
+            width: 45%;
+        }
+
+        #footer>div>a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #footer>div>a:hover {
+            color: #ec008c;
+        }
+
+        #footer>div:nth-child(2) {
+            width: 13%;
+        }
+
+        #footer>div:nth-child(3) {
+            width: 25%;
+        }
+
+        #footer>div:nth-child(4) {
+            width: 9%;
+        }
+
+        #footer>div:nth-child(5) {
+            width: 62%;
+        }
+
+        #footer>div:nth-child(6) {
+            width: 12%;
+        }
+
+        #footer>div:nth-child(7) {
+            width: 47%;
+        }
+
+        #footer>div:nth-child(3),
+        #footer>div:nth-child(7),
+        #footer>div:nth-child(5) {
+            font-size: 13px;
+        }
+
+        #footer>div:nth-child(7),
+        #footer>div:nth-child(5),
+        #footer>div:nth-child(6) {
+            margin-top: 2px;
+        }
+        h4{
+          font-size: 15px;
+        }
+        #navbar>div>a{
+          text-decoration: none;
+          color: black;
+        }
+        .btncart>a{
+          text-decoration: none;
+        }
+</style>
+</head>
+<body>
+    <div id="cont">
+
+    <div id="navbar">
+        <div class="abc"><a href="men.html">MEN</a></div>
+        <div class="abc"><a href="women.html">WOMEN</a></div>
+        <div class="abc"><a href="kid.html">KIDS</a></div>
+        <div class="abc"><a href="seophora.html">SEOPHORA</a></div>
+        <div class="abc"><a href="brands.html">COLLECTIONS</a></div>
+        <div class="abc"><a href="footwear.html">FOOTWEAR</a></div>
+        <div class="abc"><a href="brands.html">BRANDS</a></div>
+    </div>
+
+    
+    </div>
+
+    <select id="sortNames">
+        <option value="one">Sort By Name</option>
+        <option value="ase">A-Z</option>
+        <option value="dse">Z-A</option>
+      </select>
+      <select id="sortPrice">
+        <option value="one">Sort By Price</option>
+        <option value="lth">Low-High</option>
+        <option value="htl">High-Low</option>
+      </select>
+      <button class="btncart"><a href="checkout.html">Go to Cart</a></button>
+      <h1>Kid's Shopping</h1>
+      <div id="container"></div>
+  
+  </body>
+  </html>
+  
+  <script>
+    
+      var mensData = [
+      {
+        image_url:
+        "https://cdn16.nnnow.com/web-images/medium/styles/S8K7R3X3C16/1625640228182/1.jpg",
+        name: "U.S. Polo Assn. Kids Boys Black Short Sleeve Solid Shirt",
+        price:  799,
+        strikedoffprice: 999,
+      },
+      {
+        image_url:
+        "https://cdn12.nnnow.com/web-images/medium/styles/BFJ47CPXMBB/1615530498029/1.jpg",
+        name: "U.S. Polo Assn. Kids Boys Dark Blue Brand Print Pique Polo Shirt",
+        price: 909,
+        strikedoffprice: 1299,
+      },
+      {
+        image_url:
+        "https://cdn01.nnnow.com/web-images/medium/styles/KPCV5DJO2VN/1615530497954/1.jpg",
+        name: "U.S. Polo Assn. Kids Boys Blue Drawstring Waist Logo Joggers",
+        price: 979,
+        strikedoffprice: 1399,
+      },
+      {
+        image_url:
+        "https://cdn11.nnnow.com/web-images/medium/styles/44058ZLE6DH/1617191412527/1.jpg",
+        name: "U.S. Polo Assn. Kids Girls Navy Flutter Sleeves Printed Peplum Top",
+        price: 839 ,
+        strikedoffprice: 1199 ,
+      },
+      {
+        image_url:
+        "https://cdn09.nnnow.com/web-images/medium/styles/6B8F5VCVJBO/1616668519667/1.jpg",
+        name: "U.S. Polo Assn. Kids Girls Dark Blue Contrast Tape Stone Wash Jeans",
+        price: 1044,
+        strikedoffprice: 1899,
+      },
+      {
+        image_url:
+        "https://cdn07.nnnow.com/web-images/medium/styles/D0SNY7OC60P/1618814933783/1.jpg",
+        name: "U.S. Polo Assn. Kids Girls Pink Polo Collar Printed Dress",
+        price: 1189,
+        strikedoffprice: 1699,
+      },
+      {
+        image_url:
+        "https://cdn02.nnnow.com/web-images/medium/styles/QS3NJQWIC2F/1596537523960/1.jpg",
+        name: "U.S. Polo Assn. Kids Unisex Kids Navy Triple Layer Anti Viral Outdoor Face Masks - Pack Of 3",
+        price: 174,
+        strikedoffprice: 349,
+      },
+      {
+        image_url:
+        "https://cdn17.nnnow.com/web-images/medium/styles/ZJ5XM1U64LO/1626156576450/1.jpg",
+        name: "Tommy Hilfiger Kids Girls Navy Printed Xbody Bag",
+        price: 999 ,
+        strikedoffprice: 1999 ,
+      },
+      {
+        image_url:
+        "https://cdn14.nnnow.com/web-images/medium/styles/3KCK0XIJ8LA/1552306306157/1.jpg",
+        name: "U.S. Polo Assn. Kids Boys Colour Block Printed Backpack",
+        price: 759,
+        strikedoffprice: 1899,
+      },
+      
+     
+    ];
+          var cartData = JSON.parse(localStorage.getItem("cart"))||[];
+  
+          displayData(mensData);
+          // window.addEventListener("load",function(){
+          //   displayData(mensData);
+          // });
+  
+  
+          document.querySelector("#sortNames").addEventListener("change",sortbyNames);
+      function sortbyNames(){
+        var selected = document.querySelector("#sortNames").value;
+      
+        if(selected == "ase")
+        {
+          mensData.sort(function(a,b){
+            if(a.name > b.name) return 1;
+            if(a.name < b.name) return -1;
+            return 0;
+          });
+          displayData(mensData)
+          console.log(mensData);
+        }
+  
+        if(selected == "dse")
+        {
+          mensData.sort(function(a,b){
+            if(a.name > b.name) return -1;
+            if(a.name < b.name) return 1;
+            return 0;
+          });
+  
+          console.log(mensData)
+          displayData(mensData)
+        }
+      }
+          
+          document.querySelector("#sortPrice").addEventListener("change",sortbyPrice);
+      function sortbyPrice(){
+        var selected = document.querySelector("#sortPrice").value;
+      
+        if(selected == "lth")
+        {
+          mensData.sort(function(a,b){
+            return a.price - b.price;
+          });
+          displayData(mensData)
+          console.log(mensData);
+        }
+  
+        if(selected == "htl")
+        {
+          mensData.sort(function(a,b){
+            return b.price - a.price;
+          });
+  
+          console.log(mensData)
+          displayData(mensData)
+        }
+      }
+    
+         function displayData(mensData){
+          document.querySelector("#container").innerHTML = "";
+  
+          mensData.map(function(elem){
+          var box = document.createElement("div");
+  
+          var img = document.createElement("img");
+          img.src = elem.image_url;
+          img.setAttribute("class","img");
+  
+          var name = document.createElement("p");
+          name.innerText = elem.name;
+          name.setAttribute("class","name");
+  
+          var box2 = document.createElement("div");
+          box2.setAttribute("class","box2");
+  
+          var price = document.createElement("p");
+          price.innerText = elem.price;
+          price.setAttribute("class","price");
+  
+          var strkprice = document.createElement("p");
+          strkprice.innerText = elem.strikedoffprice;
+          strkprice.setAttribute("class","strkprice")
+  
+          var btn = document.createElement("button");
+          btn.innerText = "Add To Cart"
+          btn.setAttribute("class","btn");
+          btn.addEventListener("click", function(){
+            addtoCart(elem);
+          });
+  
+          box2.append(price,strkprice);
+          box.append(img,name,box2,btn);
+          document.querySelector("#container").append(box);
+          });
+  
+         }
+  
+         
+    function addtoCart(elem){
+      cartData.push(elem);
+      localStorage.setItem("cart",JSON.stringify(cartData));
+      alert("Item Added to Cart");
+    }
+  
+  </script>
+
+<a href="kid1.html">
+    <div class="btt">
+        <button> <span><i class="fa-solid fa-angle-up"></i></span>  BACK TO TOP</button> 
+    </div>
+    </a>
+    <div class="subcribe">
+    
+        <div>
+            <h2>GET THE LATEST NEWS & OFFERS IN BEAUTY & FASHION</h2>
+            <div class="esub">
+            <input id="email" type="email" placeholder="Enter your email address">
+            <button class="sub">SUBSCRIBE</button>
+             </div>
+        </div>
+    
+    </div>
+    <div id="footer">
+
+      <div>
+          <a href="who.html">
+              <h4>WHO WE ARE</h4>
+          </a>
+          <a href="https://www.nnnow.com/customercare">
+              <h4>FREQUENTLY ASKED QUESTIONS</h4>
+          </a>
+          <a href="contactus.html">
+              <h4>CONTACT US</h4>
+          </a>
+      </div>
+  
+      <div>
+          <a href="https://www.facebook.com/heynnnow"> <i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/heynnnow/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://twitter.com/heynnnow"> <i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.youtube.com/channel/UCQ2fMb06LyWA0S5upVp2UJg"> <i class="fa-brands fa-youtube"></i></a>
+      </div>
+  
+      <div>
+          <a> 2022 NNNOW</a>
+          <a href="https://www.nnnow.com/privacypolicy">Privacy Policy</a>
+          <a href="https://www.nnnow.com/termsconditions">Terms & Conditions</a>
+      </div>
+  
+      <div>
+          <h4>TOP BRANDS</h4>
+      </div>
+  
+      <div>
+          <a href="https://uspoloassn.nnnow.com/">U.S. Polo Assn.</a>
+          <a href="https://aeropostale.nnnow.com/">Aeropostale</a>
+          <a href="https://edhardy.nnnow.com/">Ed Hardy</a>
+          <a href="https://flyingmachine.nnnow.com/">Flying Machine</a>
+          <a href="https://sephora.nnnow.com/">Seophora</a>
+          <a href="https://thechildrensplace.nnnow.com/">The Children's Place</a>
+          <a href="https://arrow.nnnow.com/">Arrow</a>
+          <a href="https://tommyhilfiger.nnnow.com/">Tommy Hilfiger</a>
+          <a href="https://calvinklein.nnnow.com/">Calvin Klein</a>
+      </div>
+  
+      <div>
+          <h4>TOP CATEGORIES</h4>
+      </div>
+  
+      <div>
+          <a href="https://www.nnnow.com/men-clothing">Men Clothing</a>
+          <a href="https://www.nnnow.com/beauty">Beauty</a>
+          <a href="https://www.nnnow.com/men-accessories">Men Accesories</a>
+          <a href="https://www.nnnow.com/kids-fashion">Kids</a>
+          <a href="https://www.nnnow.com/women-accessories">Women Accesories</a>
+          <a href="https://www.nnnow.com/all-categories?os=true&src=from_footer">Offers</a>
+          <a href="https://www.nnnow.com/all-categories?na&src=from_footer">New Arrivals</a>
+      </div>
+  
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krunal Bhandekar</title>
+
+    <script src="https://kit.fontawesome.com/4c322811d7.js" crossorigin="anonymous"></script>
+
+    <style>
+        .background {
+            background-repeat: no-repeat;
+            width: 100px;
+            height: 63px;
+            filter: brightness(60%);
+        }
+
+        #out {
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            width: 25%;
+            top: 7%;
+            left: 750px;
+            padding: 25px;
+            transform: translate(-50% -50%);
+            position: absolute;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        label {
+            color: grey;
+        }
+
+        input {
+            border: 2px solid red;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding: 7px;
+            box-sizing: border-box;
+        }
+
+        #submit {
+            width: 100%;
+            background-color: #ff3399;
+            color: white;
+            border: none;
+            padding: 10px 0px;
+            margin-top: 20px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #submit:hover {
+            background-color: #c00563;
+        }
+
+        h1 {
+            text-align: center;
+
+        }
+
+        a {
+            color: #ff3399;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #google>a,
+        #facebook>a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        #google {
+            display: flex;
+            color: white;
+            background-color: #4285f4;
+            height: 35px;
+            align-items: center;
+            justify-content: space-around;
+            cursor: pointer;
+        }
+
+        #google:hover {
+            background-color: #126af7;
+        }
+
+        #facebook {
+            display: flex;
+            background-color: #3b5998;
+            color: white;
+            height: 35px;
+            align-items: center;
+            justify-content: space-around;
+            cursor: pointer;
+        }
+
+        #facebook:hover {
+            background-color: #184199;
+        }
+
+        #google>img,
+        #facebook>img {
+            width: 18px;
+            height: 18px;
+            border-radius: 2px;
+        }
+
+        #down {
+            width: 85%;
+            margin: auto;
+            margin-top: 70px;
+        }
+
+        p {
+            font-size: 14px;
+            text-align: center;
+            color: grey;
+        }
+
+        i {
+            color: #ff3399;
+        }
+
+        @media only screen and (min-width: 421px) and (max-width: 780px) {
+            img {
+                width: 0%;
+                height: 0%;
+            }
+
+            #out {
+                width: 80%;
+                left: 0px;
+                right: 0px;
+                font-size: 20px;
+                margin: auto;
+            }
+
+            label {
+                font-size: 18px;
+            }
+
+           a {
+                font-size: 10px;
+            }
+
+            #google>img,
+            #facebook>img {
+                width: 18px;
+                height: 18px;
+                border-radius: 2px;
+            }
+
+        }
+
+        @media only screen and (min-width: 80px) and (max-width: 420px) {
+            img {
+                width: 0%;
+                height: 0%;
+            }
+
+            #out {
+                width: 80%;
+                margin: auto;
+                left: 3px;
+                right: 5px;
+                font-size: 15px;
+            }
+
+            label {
+                font-size: 15px;
+            }
+
+            a {
+                font-size: 10px;
+            }
+
+            #google>img,
+            #facebook>img {
+                width: 15px;
+                height: 15px;
+                border-radius: 2px;
+            }
+
+            #submit {
+                width: 100%;
+                font-size: 9px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+
+        <img src="https://img.freepik.com/free-photo/woman-holding-various-shopping-bags-copy-space_23-2148674122.jpg?w=2000"
+            width="1255%" height="1100%">
+
+    </div>
+
+    <div id="out">
+        <a href="men.html"> <i class="fas fa-times"></i></a>
+
+        <h1>LOGIN </h1>
+        <div>
+            <form>
+                <label>Enter Your Email</label>
+                <input id="email"  type="text" required>
+                <input type="submit" id="submit" value="CONTINUE">
+            </form>
+        </div>
+        <div id="google">
+            <img src="https://static.nnnow.com/google-social-login.svg">
+            <a
+                href="https://accounts.google.com/AccountChooser/signinchooser?service=lso&flowName=GlifWebSignIn&flowEntry=AccountChooser">Continue
+                with Google </a>
+            <p></p>
+
+        </div>
+        <br>
+        <div id="facebook">
+            <img src="https://static.nnnow.com/facebook.png">
+            <a href="https://www.facebook.com/"> Continue with Facebook</a>
+            <p></p>
+        </div>
+        <div id="down">
+            <p>By proceeding, you agree to <a href="https://www.nnnow.com/privacypolicy">Privacy Policy</a>,</p>
+            <p> <a href="https://www.nnnow.com/termsconditions"> Terms & Conditions</a></p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit", loginFun)
+
+    var regdUsers = JSON.parse(localStorage.getItem("users")) || [];
+    
+
+    function loginFun() {
+        event.preventDefault();
+        var enteredEmail = document.querySelector("#email").value;
+        
+
+        console.log(enteredEmail)
+
+        var flag = false;
+
+        for (var i = 0; i < regdUsers.length; i++) {
+            console.log(regdUsers[i]);
+            if (
+                regdUsers[i].email == enteredEmail 
+               
+
+            ) {
+                flag = true
+
+                break;
+            }
+            else {
+                flag = false
+
+            }
+        }
+        if (flag) {
+            alert("Account Verified");
+            window.location.href = "password.html";
+
+        }
+        else {
+            alert("Account Verification failed")
+            window.location.reload()
+        }
+
+    }
+</script>

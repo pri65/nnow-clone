@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krunal Bhandekar</title>
+    <style>
+        .background {
+            background-repeat: no-repeat;
+            width: 100px;
+            height: 63px;
+            filter: brightness(70%);
+        }
+
+        #otp {
+            background-color: white;
+            width: 23%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding: 35px;
+            text-align: center;
+            top: 4%;
+            left: 800px;
+            transform: translate(-50% -50%);
+            position: absolute;
+            font-size: 20px;
+        }
+h1{
+    font-size: 25px;
+}
+        input {
+            width: 94%;
+            padding: 7px;
+            border: 2px solid black;
+            margin-top: 10px;
+        }
+
+        #submit {
+            width: 100%;
+            background-color: #ff3399;
+            color: white;
+            border: none;
+            padding: 10px 0px;
+            margin-top: 20px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #submit:hover {
+            background-color: #c00563;
+        }
+
+        #img {
+            width: 36%;
+            margin: auto;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        a {
+            color: #ff3399;
+        }
+        a:hover {
+           text-decoration: underline;
+        }
+
+        a:hover {
+            cursor: pointer;
+        }
+      
+        @media only screen and (min-width: 421px) and (max-width: 780px) {
+           
+           .background>img{
+               width:0% ;
+               height: 0%;
+           }
+           #otp {
+               width: 80%;
+               margin: auto;
+               left: 0px;
+               right: 0px;
+               font-size: 20px;
+           }
+   
+           }
+           @media only screen and (min-width: 80px) and (max-width: 420px) {
+              
+           .background>img{
+               width:0% ;
+               height: 0%;
+           }
+           #otp {
+               width: 80%;
+               margin: auto;
+               left: 0px;
+               right: 0px;
+           }
+           h1{
+               font-size: 15px;
+               margin: auto;
+               margin-bottom: 12px;
+           }
+           #img {
+            width: 50%;
+            margin: auto;
+        }
+           }
+    </style>
+</head>
+
+<body>
+
+    <div class="background">
+        <img src="https://images.ctfassets.net/rxqefefl3t5b/6I2vL9f0IVsDQ8qFgdrxH7/7660c4bab3116a4a04025d5c4802efa5/Virgin-Red-online-shopping-offers.jpg?fl=progressive&q=80"
+            width="1255%" height="1100%">
+    </div>
+    <div id="otp">
+      
+        <h1>VERIFY PHONE NUMBER</h1>
+        <div id="img">
+            <img src="https://static.nnnow.com/Group%2043373.svg" alt="">
+        </div>
+        <p>We've sent an OTP on your Mobile vis SMS, Please enter it below, and you're done.</p>
+        <form>
+            <label>OTP</label><br>
+            <input id="otp1" type="password" required>
+            <p>Didn't Receive? <a>Resend</a> </p>
+            <input type="submit" id="submit" value="SUBMIT">
+        </form>
+       <a href="index.html">Go to Home Page</a>
+    </div>
+</body>
+
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",checkotp)
+
+    function checkotp(){
+        var input=document.querySelector("#otp1").value
+        console.log("inside");
+   if(input=='1234'){
+        alert("OTP verified");
+        window.location.reload();
+        
+    }
+    else{
+        alert("OTP failed")
+        window.location.reload()
+    }
+    }
+</script>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krunal Bhandekar</title>
+    <script src="https://kit.fontawesome.com/4c322811d7.js" crossorigin="anonymous"></script>
+    <style>
+        #logo {
+            padding-left: 20px;
+        }
+
+        a>img {
+            width: 125px;
+        }
+
+        #anchor {
+            background-color:
+                #2ba2e4;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px 0px 8px 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #anchor>div>a>i {
+            font-size: 5px;
+            background-color: #ec008c;
+            color: white;
+            padding: 6px;
+            border-radius: 70%;
+        }
+
+        #pay {
+            display: flex;
+            width: 30%;
+            margin: auto;
+            
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        #method {
+            width: 12%;
+         display: flex;
+         flex-direction: column;
+            margin: auto;
+           
+        }
+
+       #method>a{
+           color: black;
+           font-weight: bold;
+           margin-top: 10px;
+       }
+       #method>a>i{
+        font-size: 13px;
+       }
+       #method>a>i:hover{
+        background-color: rgb(70, 68, 68);
+       }
+       #total{
+           font-weight: bold;
+           font-size: 19px;
+           color: red;
+       }
+       #footer{
+           display: flex;
+           justify-content: space-between;
+           margin-top: 280px;
+           padding: 10px 0px;
+           background-color: #f3f3f3;
+       }
+       #footer>div{
+           width: 40%;
+           display: flex;
+           justify-content: space-around;
+       }
+       #footer>div>a{
+           color: black;
+           font-size: 12px;
+       }
+    </style>
+</head>
+
+<body>
+    <div id="logo">
+        <a href="landing.html"> <img
+                src="https://cdn02.nnnow.com/web-images/master/navtree_metaData/59b2425ae4b0d70964ee66e0/1505806763887/12NNNOWLOGODESKTOP.png"></a>
+    </div>
+    <div id="anchor">
+        <div>CHECKOUT</div>
+        <div>
+            <a href="checkout.html"><i class="fa-solid fa-1"></i>&nbsp Shipping</a>&nbsp &nbsp;
+            <a href="address.html"><i class="fa-solid fa-2"></i></i>&nbsp Payment</a>
+        </div>
+        <div></div>
+    </div>
+    <div id="pay">
+        <h3>
+            TOTAL PAYABLE AMOUNT IS ₹ &nbsp</h3>
+        <p id="total"></p>
+    </div>
+    <h2>Payment Methods</h2>
+    <div id="method">
+
+        <a href="finalpay.html"><i class="fa-regular fa-square"></i> Credit / Debit Card</a>
+        <a href="finalpay.html"><i class="fa-regular fa-square"></i> Net Banking</a>
+        <a href="finalpay.html"><i class="fa-regular fa-square"></i> Paytm Wallet</a>
+
+    </div>
+    <div id="footer">
+        <div>
+           <img src="https://static.nnnow.com/Verified_by_Visa_logo.png">
+           <img src="https://static.nnnow.com/verified-mastercard.png">
+           <img src="https://static.nnnow.com/verified-pci.png">
+           <img src="https://static.nnnow.com/AMEX-safekey.png">
+           
+        </div>
+        <div>
+            <a href="">2022 NNNOW </a>
+            <a href="https://www.nnnow.com/privacypolicy">Privacy policy</a>
+            <a href="https://www.nnnow.com/termsconditions">Terms & Conditions</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    var ftotal=localStorage.getItem("ftotal")
+    document.querySelector("#total").innerText=Math.ceil(ftotal)
+    </script>

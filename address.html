@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krunal Bhandekar</title>
+    <script src="https://kit.fontawesome.com/4c322811d7.js" crossorigin="anonymous"></script>
+    <style>
+        h2 {
+            text-align: center;
+        }
+i{
+    color: black;
+}
+        #main {
+            width: 62%;
+            margin: auto;
+            padding: 20px 40px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #down {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        #one>input{
+            width: 99%;
+        }
+        #down>div{
+            width: 100%;
+        }
+        #down>div>input{
+            width: 90%;
+        }
+        input{
+            background-color: #f3f3f3;
+            border: none;
+            outline: none;
+            height: 40px;
+            font-size: 13px;
+            margin-top: 8px;
+            margin-bottom: 25px;
+        }
+        label{
+            color: rgb(107, 106, 106);
+        }
+        button{
+            font-size: 15px;
+            background-color: #999999;
+            border: none;
+            padding: 13px;
+            color: white;
+            font-weight: bold;
+            width: 200px;
+            margin-top: 40px;        
+        }
+        i{
+            color: #ec008c;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+
+        <div>
+            <a href="checkout.html"> <i class="fa-solid fa-arrow-left"></i></a>
+
+            <h2>Add Address</h2>
+            <p></p>
+        </div>
+
+        <div id="one">
+            <label>Name*</label><br>
+            <input type="text"><br>
+            <label>Address*</label><br>
+            <input type="text" placeholder="(House/Flat No., Building, Street, Area/Locality)"><br>
+        </div>
+
+        <div id="down">
+
+            <div>
+                <label>Phone*</label><br>
+                <input type="text"><br>
+            </div>
+            <div>
+                <label>Alternate Number</label><br>
+                <input type="text"><br>
+            </div>
+            <div>
+                <label>Pincode*</label><br>
+                <input type="text"><br>
+            </div>
+            <div>
+                <label>Landmark</label><br>
+                <input type="text"><br>
+            </div>
+
+        </div>
+        <a href="payment.html">
+
+            <button>SAVE</button>
+        </a>
+    </div>
+</body>
+
+</html>
