@@ -8,7 +8,7 @@ This was a collaborative project made by 5 members Executed in 5 days.
 5) Pawan
 
 
-  Deploy Link - https://ganeshsabale99.github.io/NNNOWClone/
+  Deploy Link - https://funny-scone-e16808.netlify.app/
 
 ---
 
